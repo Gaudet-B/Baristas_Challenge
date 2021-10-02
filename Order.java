@@ -72,7 +72,7 @@ public class Order {
     public ArrayList<Item> getItems() {
         return items;
     }
-    public void setItems (Item item) {
+    public void setItem (Item item) {
         this.items.add(item);
     }
 

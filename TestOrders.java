@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class TestOrders {
     public static void main(String[] args) {
 
+        CoffeeKiosk coffeeKiosk = new CoffeeKiosk();
     
         // Menu items:
         Item item1 = new Item("mocha", 3.5);
@@ -59,6 +60,13 @@ public class TestOrders {
         System.out.println("\n");
         System.out.println(order5.getName());
         System.out.println(order5.display());
+
+        // Coffee Kiosk:
+        coffeeKiosk.addMenuItem(item1.getName(), item1.getPrice());
+        coffeeKiosk.addMenuItem(item2.getName(), item2.getPrice());
+        coffeeKiosk.addMenuItem(item3.getName(), item3.getPrice());
+        coffeeKiosk.addMenuItem(item4.getName(), item4.getPrice());
+        coffeeKiosk.newOrder();
 
     }
 }
